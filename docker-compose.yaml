@@ -16,4 +16,4 @@ services:
     image: octosystems/octocraft-nginx
     build: ./nginx
     ports:
-      - 80:80    
+      - 80:80
