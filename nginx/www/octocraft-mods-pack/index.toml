@@ -1,0 +1,11 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/jei.toml"
+hash = "c8c8de4dfffa2324cbaf87bf2e640f9f35285dd0cc0cad257a4d082cad13d207"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.toml"
+hash = "6a8692c823be7d69e099033c3719b290f02e568a08a9274c555cb9e49cf1347f"
+metafile = true

@@ -1,0 +1,13 @@
+name = "Octocraft Mods"
+author = "Oliver Schmitz"
+version = "1.0.0"
+pack-format = "packwiz:1.0.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "549a8f1b290e9a228d85b163f12c45f6984942807598b6e360d56fe69ac0e2ac"
+
+[versions]
+forge = "39.0.0"
+minecraft = "1.18.1"
