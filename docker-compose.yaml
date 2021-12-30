@@ -1,0 +1,21 @@
+version: '3'
+volumes:
+  mc-data:
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    env_file: ./resources/minecraft.env
+    depends_on:
+      - http
+    ports:
+      - 25565:25565
+    volumes:
+      - mc-data:/data
+      - ./resources:/resources:ro
+      - ./mods:/mods:ro
+  http:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./www/:/usr/share/nginx/html:ro
