@@ -4,18 +4,16 @@ volumes:
 services:
   minecraft:
     image: itzg/minecraft-server
-    env_file: ./resources/minecraft.env
+    env_file: ./minecraft/minecraft.env
     depends_on:
       - http
     ports:
       - 25565:25565
     volumes:
       - mc-data:/data
-      - ./resources:/resources:ro
-      - ./mods:/mods:ro
+      - ./minecraft:/resources:ro      
   http:
-    image: nginx
+    image: octosystems/octocraft-nginx
+    build: ./nginx
     ports:
-      - 80:80
-    volumes:
-      - ./www/:/usr/share/nginx/html:ro
+      - 80:80    
